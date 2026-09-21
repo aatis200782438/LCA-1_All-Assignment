@@ -1,1 +1,37 @@
 
+# Dictionary
+student = {"name": "Aatish", "age": 18, "course": "Python"}
+
+print("Dictionary:", student)
+
+student["marks"] = 85
+print("After adding:", student)
+
+student["age"] = 19
+print("After updating:", student)
+
+del student["course"]
+print("After removing:", student)
+
+print("Keys:", student.keys())
+print("Values:", student.values())
+print("Items:", student.items())
+
+
+# Tuple
+numbers = (10, 20, 30, 40, 50)
+
+print("\nTuple:", numbers)
+print("First element:", numbers[0])
+print("Slicing:", numbers[:3])
+
+numbers = numbers + (60,)
+print("After adding:", numbers)
+
+numbers = tuple(x for x in numbers if x != 30)
+print("After removing:", numbers)
+
+print("Length:", len(numbers))
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+print("Is 40 present?", 40 in numbers)
